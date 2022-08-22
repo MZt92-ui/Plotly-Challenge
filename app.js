@@ -41,7 +41,8 @@ function init(){
         };
     
     var init_bar_data = [trace_bar];
-    Plotly.newPlot("bar",init_bar_data);
+    var layout = {title: "Top 10 OTU IDs"};
+    Plotly.newPlot("bar",init_bar_data, layout);
 
     // default bubble chart
     var trace_bubble = {
